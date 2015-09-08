@@ -248,7 +248,7 @@ Operators are the same in JS as in other programming languages.
 
 - The Or (`||`) Operator
   * returns value of first truthy operand it encounters
-  * if both operands are falsely, returns value of last operand
+  * if both operands are falsey, returns value of last operand
     
 ```javascript
 var bar = 0;
@@ -260,7 +260,7 @@ foo || moo; // returns 1
 ```
 
 - The And (`&&`) Operator
-  * returns first falsely operand it encounters
+  * returns first falsey operand it encounters
   * if both operands are truthy, returns value of last operand
    
 ```javascript
