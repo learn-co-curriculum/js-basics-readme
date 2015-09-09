@@ -9,7 +9,7 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
   * Variable Declaration
   * Semicolons
   * Whitespace
-* Truthy and Falsely Values
+* Truthy and Falsey Values
 * Return Values
 * Operators
   * Basic
