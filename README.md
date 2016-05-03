@@ -1,10 +1,6 @@
 # Intro to JavaScript
 
-JavaScript is the de facto language of the internet. It's a tool that, once
-mastered, will allow you to interact with your users via your app in fun and
-interesting ways. It is a dynamically typed, prototypical, functional
-programming language. What that exactly means will become more apparent in
-lessons and through exposure to the language. But here are the basics.
+JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language. What that exactly means will become more apparent in lessons and through exposure to the language. But here are the basics.
 
 ## Objectives
 + Print JavaScript to the console
@@ -16,21 +12,18 @@ lessons and through exposure to the language. But here are the basics.
 
 #### Variable Declaration
 
-To make a variable called `greeting` and set it equal to the string `
-"hello world"` in Ruby, we could just write:
+To make a variable called `greeting` and set it equal to the string `"hello world"` in Ruby, we could just write:
 
 ```ruby
 greeting = "hello world"
 ```
 
-In JavaScript, to declare a local variable (which is almost always what you want
-to do), you add the keyword `var` before the variable name, like so:
+In JavaScript, to declare a local variable (which is almost always what you want to do), you add the keyword `var` before the variable name, like so:
 
 ```javascript
 var greeting = "hello world";
 ```
-Notice that semicolons are used after variable declaration and after printing
-information to the console.
+Notice that semicolons are used after variable declaration and after printing information to the console.
 
 #### Whitespace
 
@@ -63,9 +56,7 @@ Semicolons *must* be used in some cases, *should* be used in others, and other t
 
 **Necessary**
 
-Semicolons must be used when two statements are on the same line (this is called
-statement chaining). In Ruby, you probably didn't see too much statement chaining
-so here's an example:
+Semicolons must be used when two statements are on the same line (this is called statement chaining). In Ruby, you probably didn't see too much statement chaining so here's an example:
 
 ```ruby
 fox = "XOF NWORB KCIUQ EHT"
@@ -73,19 +64,14 @@ fox.reverse!; fox.downcase!
 # => "the quick brown fox"
 ```
 
-Notice how that semicolon separates the reversal from the down-casing?
-JavaScript, like Ruby, also requires semicolons when executing two statements on
-the same line:
+Notice how that semicolon separates the reversal from the down-casing? JavaScript, like Ruby, also requires semicolons when executing two statements on the same line:
 
 ```javascript
 var fox = "XOF NWORB KCIUQ EHT";
 fox = fox.split("").reverse().join(""); fox = fox.toLowerCase();
 // => "the quick brown fox"
 ```
-Of course, there are exceptions. For instance, when we cover loops, you may
-notice that the `for` loop abides by this rule for the first two statements in
-its argument but not for the last. Not to worry, its syntax will get covered
-more fully later in the curriculum.
+Of course, there are exceptions. For instance, when we cover loops, you may notice that the `for` loop abides by this rule for the first two statements in its argument but not for the last. Not to worry, its syntax will get covered more fully later in the curriculum.
 
 **Ideal**
 
@@ -122,9 +108,7 @@ if (lunchtime) {
 }
 ```
 
-The above-mentioned cases are pretty easy to remember. It's a bit trickier to
-remember that semicolons follow **function expressions** but not **function
-declarations**.
+The above-mentioned cases are pretty easy to remember. It's a bit trickier to remember that semicolons follow **function expressions** but not **function declarations**.
 
 ``` javascript
 // function declaration (no semicolon)
@@ -138,36 +122,21 @@ var bar = function() {
 };
 ```
 
-Also avoid putting semicolons between an ending parenthesis and a beginning
-curly bracket. In other words, you shouldn't write `) ; {`.
+Also avoid putting semicolons between an ending parenthesis and a beginning curly bracket. In other words, you shouldn't write `) ; {`.
 
 **Hints**
 
-Should you get stuck with your semicolon usage (and don't worry, even
-professional JavaScript developers occasionally forget what goes where), paste
-your code into a JSLinter, such as [JSLint](http://www.jslint.com/) or even
-[JSFiddle](http://jsfiddle.net/). If you click `Lint`, you'll see a line-by-line
-evaluation of your semicolon usage and other syntax mistakes.
+Should you get stuck with your semicolon usage (and don't worry, even professional JavaScript developers occasionally forget what goes where), paste your code into a JSLinter, such as [JSLint](http://www.jslint.com/) or even [JSFiddle](http://jsfiddle.net/). If you click `Lint`, you'll see a line-by-line evaluation of your semicolon usage and other syntax mistakes.
 
 **A slightly more heretical take on semicolons**
 
-Semicolons don't really matter in JavaScript. If we're working on a large
-JavaScript application, chances are we're at least using a [minifier](https://developers.google.com/speed/docs/insights/MinifyResources)
-that will insert semicolons as appropriate when it processes our code. And
-lately, it's becoming more popular to compile ECMAScript 6 to ES5 (the
-JavaScript that most browsers work in) using a tool like [Babel](https://babeljs.io/).
-[TypeScript](https://www.typescriptlang.org/) is also growing in popularity.
+Semicolons don't really matter in JavaScript. If we're working on a large JavaScript application, chances are we're at least using a [minifier](https://developers.google.com/speed/docs/insights/MinifyResources) that will insert semicolons as appropriate when it processes our code. And lately, it's becoming more popular to compile ECMAScript 6 to ES5 (the JavaScript that most browsers work in) using a tool like [Babel](https://babeljs.io/). [TypeScript](https://www.typescriptlang.org/) is also growing in popularity.
 
-All of this is to say that the long-running semicolon debate in JavaScript
-is largely overblown at this point. Remember to use semicolons to separate
-statements that occur on a single line; otherwise, follow the conventions of
-the team.
+All of this is to say that the long-running semicolon debate in JavaScript is largely overblown at this point. Remember to use semicolons to separate statements that occur on a single line; otherwise, follow the conventions of the team.
 
 ## Truthy and Falsey Values
 
-We make a lot of assumptions when we write computer programs. In order to make
-the right assumptions, we need to understand what values in our program evaluate
-to `truthy` values and which evaluate to `falsey` values.
+We make a lot of assumptions when we write computer programs. In order to make the right assumptions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsey` values.
 
 Truthy values:
 
@@ -199,9 +168,7 @@ undefined;
 
 ## Printing to the Console
 
-One of the first methods you probably learned in Ruby was `puts`. JavaScript has
-an equivalent function called `console.log()`. Let's take the Ruby code below
-and turn it into JavaScript code:
+One of the first methods you probably learned in Ruby was `puts`. JavaScript has an equivalent function called `console.log()`. Let's take the Ruby code below and turn it into JavaScript code:
 
 ```ruby
 puts "JavaScript is also known as ECMAScript"
