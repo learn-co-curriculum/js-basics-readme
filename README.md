@@ -195,7 +195,7 @@ Will the code execute and work without the semicolon? Yes. Is the semicolon best
 
 Well, this code is all fine and dandy but how do you run it? The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. All you need to do is make sure you're reading this on either Chrome or Firefox (trust us, the developer tools of these browsers are way better than on Safari). Then open up your browser's console. That's right, just like your computer knows about running a Ruby sandbox when you type `irb`, your browser runs a JavaScript sandbox when you open up the console.
 
-To open up your browser's console from Chrome, type `command` + `option` + `J`. From Firefox, type `command` + `option` + `K`. (If you love writing directly into your terminal, go ahead and install [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac). Then type `node` in your terminal and you'll be in a JavaScript sandbox.)
+To open up your browser's console from Chrome, type `command` + `option` + `J`; in Windows, that's `ctrl` + `shift` + `J`. From Firefox, type `command` + `option` + `K`. (If you love writing directly into your terminal, go ahead and install [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac). Then type `node` in your terminal and you'll be in a JavaScript sandbox.)
 
 From your console (or Node terminal), simply type the code above into the prompt and hit `return`. There, you've run your first JavaScript code!
 
@@ -206,9 +206,5 @@ Open up Chrome and on any tab (even a blank one) right click and select `Inspect
 The white space below is your console, a sandbox where you can enter and execute any JavaScript code you want.
 
 ![Executing JavaScript in Console](https://s3.amazonaws.com/learn-verified/exectuing-js-in-console.png)
-
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
-
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-readme'>Javascript Basics </a> on Learn.co and start learning to code for free.</p>
